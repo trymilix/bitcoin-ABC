@@ -1,5 +1,5 @@
 
-比特币支付的记录中有两个脚本scriptPubKey和scriptSig，scriptPubKey用于下一次支付，scriptSig配合上一次支付的scriptPubKey验证比特币的合法性。这个脚本语言基于堆栈有点不大好读，转换成C语言可读性就好多了
+比特币支付的记录中有两个脚本scriptPubKey和scriptSig，scriptPubKey用于下一次支付，scriptSig配合上一次支付的scriptPubKey验证比特币的合法性。这个脚本语言基于堆栈解释执行，有点不大好读，转换成C语言可读性就好多了。
 
 
 ```C
@@ -24,6 +24,8 @@ bool Pay_to_PubkeyHash(sig, pubKey, pubKeyHash)
   return OP_CHECKSIG(sig, pubKey);
 }
 ```
+
+Pay_to_PubkeyHash有三个参数，sig和pubkey是scriptSig脚本提供的，pubKeyHash是scriptPubKey提供的。一笔支付记录中所有的信息包括pubKeyHash是公开的，但想要花这个钱就必须提供sig和pubkey。
 
 # Reference
 1. [Transaction](https://en.bitcoin.it/wiki/Transaction)
