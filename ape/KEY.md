@@ -20,7 +20,7 @@ OP_HASH160(pubKey)
 bool Pay_to_PubkeyHash(sig, pubKey, pubKeyHash)
 {
   pubHashA = OP_HASH160(pubKey);
-  OP_EQUALVERIFY OP_CHECKSIG(pubHashA, pubKeyHash);
+  OP_EQUALVERIFY(pubHashA, pubKeyHash);
   return OP_CHECKSIG(sig, pubKey);
 }
 ```
