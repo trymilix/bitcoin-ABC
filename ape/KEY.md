@@ -27,6 +27,8 @@ bool Pay_to_PubkeyHash(sig, pubKey, pubKeyHash)
 
 Pay_to_PubkeyHash有三个参数，sig和pubkey是scriptSig脚本提供的，pubKeyHash是scriptPubKey提供的。一笔支付记录中所有的信息包括pubKeyHash是公开的，但想要花这个钱就必须提供sig和pubkey。
 
+两个脚本其实完成一种约定，而上述只是其中一种。
+
 # Reference
 1. [Transaction](https://en.bitcoin.it/wiki/Transaction)
 2. [Bitcoin Developer Reference](https://bitcoin.org/en/developer-reference)
