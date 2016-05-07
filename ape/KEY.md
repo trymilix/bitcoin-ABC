@@ -27,7 +27,13 @@ bool Pay_to_PubkeyHash(sig, pubKey, pubKeyHash)
 
 Pay_to_PubkeyHash有三个参数，sig和pubkey是scriptSig脚本提供的，pubKeyHash是scriptPubKey提供的。一笔支付记录中所有的信息包括pubKeyHash是公开的，但想要花这个钱就必须提供sig和pubkey。
 
-两个脚本其实完成一种约定，而上述只是其中一种。
+两个脚本其实完成一种约定，这个约定其实就是：
+# 提供一个真实有效的pubkey，OP_EQUALVERIFY(pubHashA, pubKeyHash)保证了这个。
+# 证明你用于支付的记录确实是你本人的。也就是OP_CHECKSIG(sig, pubKey)。简单地说就是通过数字签名保证你是支付记录的真正拥有者。
+
+如果你去看HTTPS的原理，它也涉及到提供pubkey和sig，但它有一个权威机构管理统一管理，保证你浏览的网站确实拥有这个pubkey。
+
+为什么HTTPS需要中心服务器，而比特币就不需要？
 
 # Reference
 1. [Transaction](https://en.bitcoin.it/wiki/Transaction)
