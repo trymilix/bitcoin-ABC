@@ -82,11 +82,11 @@ ___
 
 既然我已经有玉佩了，那要我名字干嘛。
 
-我把名字去掉
+我把名字，备注去掉：
 ___
 2016年 1月 5日，花费 编号 1FZdgV9dQGpwxKmdbJ3e82fJuiGGthaVKH
 
-编号 17RqLJ2Yz69yovxj12SeQ6S9d7itPwCrkS：100 元。【备注：买菜】
+编号 17RqLJ2Yz69yovxj12SeQ6S9d7itPwCrkS：100 元。
 
 编号 13BcwBQt6KKtid72SBx41thWDUxdQu5bhG：900 元。
 
