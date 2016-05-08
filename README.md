@@ -12,9 +12,5 @@
 
 看完以下短篇，希望你我对比特币有个简单的认识。
 
-1. [管好你的钱包](abc/WALLET.md)
-2. [比特币去哪儿？](abc/WHERE.md)
-3. [钥匙有卵用？](abc/KEY.md)
-4. [谁发行比特币？](abc/MINER.md)
 
 [程序猿里边请](ape/README.md)
