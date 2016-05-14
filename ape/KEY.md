@@ -39,3 +39,4 @@ Pay_to_PubkeyHash有三个参数，sig和pubkey是scriptSig脚本提供的，pub
 # Reference
 1. [Transaction](https://en.bitcoin.it/wiki/Transaction)
 2. [Bitcoin Developer Reference](https://bitcoin.org/en/developer-reference)
+3. [What is a Digital Signature?](http://www.youdzone.com/signature.html)
